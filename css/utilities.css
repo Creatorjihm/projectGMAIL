@@ -1,0 +1,57 @@
+.icon-wrap {
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+}
+
+.square-wrap {
+  display: flex;
+  position: relative;
+}
+
+.icon-wrap::before,
+.square-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  background-color: hsla(0, 3%, 6%, 0.050);
+  scale: 0;
+  /* transition: 300ms; */
+  border-radius: inherit;
+}
+
+
+.icon-wrap:hover::before {
+  scale: 1.8;
+}
+
+.message-genre span {
+  font-size: 20px;
+}
+
+.label span {
+  font-size: 23px;
+}
+
+.fill {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.flexed-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* .flexed {
+  display: flex;
+} */
+
+.merged-icons {
+  display: flex;
+}
