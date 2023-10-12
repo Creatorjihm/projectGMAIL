@@ -1,811 +1,885 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONT ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- GOOGLE FONT ICONS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="Google Sans/style.css" />
+    <title>Welcome To Gmail</title>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="Google Sans/style.css">
-  <title>Welcome To Gmail</title>
-</head>
-
-<body>
-  <!-- Header DIV Starts -->
-  <div class="header">
-
-    <!-- Container for hambugger and logo -->
-    <div class="header-left">
-      <div class="icon-wrap big-hover">
-        <span class="material-symbols-outlined">
-          menu
-        </span>
-      </div>
-      <div class="logo">
-        <img src="img/logo_gmail_lockup_default_1x_r5.png" alt="">
-      </div>
-    </div>
-
-
-    <!-- container for searchbox -->
-    <div class="searchbox">
-      <div class="icon-wrap">
-        <span class="material-symbols-outlined">
-          search
-        </span>
-      </div>
-      <input type="search" name="search" id="search" placeholder="Search mail">
-      <div class="icon-wrap">
-        <span class="material-symbols-outlined">
-          tune
-        </span>
-      </div>
-    </div>
-
-
-    <!-- container for rightside icons on header -->
-    <div class="header-right">
-      <div class="icon-wrap">
-        <span class="material-symbols-outlined">
-          help
-        </span>
-      </div>
-      <div class="icon-wrap">
-        <span class="material-symbols-outlined">
-          settings
-        </span>
-      </div>
-      <div class="icon-wrap">
-        <span class="material-symbols-outlined">
-          apps
-        </span>
-      </div>
-      <div class="icon-wrap avatar">
-        <img src="img/9d324af252ec468580f8dda2c75b1312.jpg" alt="">
-      </div>
-    </div>
-
-  </div>
-  <!-- Header ends here -->
-
-
-  <!-- Container for the main body content -->
-  <div class="content">
-
-    <!-- container for the left column -->
-    <div class="left-column">
-      <div tabindex="1" class="compose">
-        <div>
-          <span class="material-symbols-outlined">
-            edit
-          </span>
+  <body>
+    <!-- Header DIV Starts -->
+    <div class="header">
+      <!-- Container for hambugger and logo -->
+      <div class="header-left">
+        <div class="icon-wrap big-hover">
+          <span class="material-symbols-outlined"> menu </span>
         </div>
-        <p>Compose</p>
+        <div class="logo">
+          <img src="img/logo_gmail_lockup_default_1x_r5.png" alt="" />
+        </div>
       </div>
 
-      <div tabindex="1" class="message-genre">
-        <span class="material-symbols-outlined">
-          inbox
-        </span>
-        <p>Inbox</p>
-      </div>
-      <div tabindex="1" class="message-genre text-thin">
-        <span class="material-symbols-outlined">
-          star
-        </span>
-        <p>Starred</p>
-      </div>
-      <div tabindex="1" class="message-genre text-thin">
-        <span class="material-symbols-outlined">
-          schedule
-        </span>
-        <p>Snoozed</p>
-      </div>
-      <div tabindex="1" class="message-genre text-thin">
-        <span class="material-symbols-outlined">
-          send
-        </span>
-        <p>Sent</p>
-      </div>
-      <div tabindex="1" class="message-genre">
-        <span class="material-symbols-outlined">
-          draft
-        </span>
-        <p>Drafts</p>
-      </div>
-      <div tabindex="1" class="message-genre text-thin">
-        <span class="material-symbols-outlined">
-          expand_more
-        </span>
-        <p>More</p>
-      </div>
-      <div class="label">
-        <p>Labels</p>
+      <!-- container for searchbox -->
+      <div class="searchbox">
         <div class="icon-wrap">
-          <span class="material-symbols-outlined">
-            add
-          </span>
+          <span class="material-symbols-outlined"> search </span>
+        </div>
+
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined"> tune </span>
         </div>
       </div>
-      <div tabindex="1" class="message-genre text-thin">
-        <span class="material-symbols-outlined fill">
-          label
-        </span>
-        <p>Notes</p>
-      </div>
-      <div tabindex="1" class="message-genre text-thin">
-        <span class="material-symbols-outlined fill">
-          label
-        </span>
-        <p>Unwanted</p>
+
+      <!-- container for rightside icons on header -->
+      <div class="header-right">
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined"> help </span>
+        </div>
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined"> settings </span>
+        </div>
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined"> apps </span>
+        </div>
+        <div class="icon-wrap avatar">
+          <img src="img/9d324af252ec468580f8dda2c75b1312.jpg" alt="" />
+        </div>
       </div>
     </div>
-    <!-- left column ends here -->
+    <!-- Header ends here -->
 
-    <!-- container for the middle column -->
-    <div class="middle-column">
-
-      <!-- container for the icons row -->
-      <div class="icons-container">
-        <div class="flexed-icons start">
-          <div class="merged-icons">
-            <input class="square-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined square-wrap">
-              arrow_drop_down
-            </span>
+    <!-- Container for the main body content -->
+    <div class="content">
+      <!-- container for the left column -->
+      <div class="left-column">
+        <div tabindex="1" class="compose">
+          <div>
+            <span class="material-symbols-outlined"> edit </span>
           </div>
-          <span class="material-symbols-outlined icon-wrap">
-            refresh
-          </span>
-          <span class="material-symbols-outlined icon-wrap">
-            more_vert
-          </span>
+          <p>Compose</p>
         </div>
-        <div class="flexed-icons end message-genre">
-          <p class="square-wrap">1-50 of 804</p>
-          <span class="material-symbols-outlined icon-wrap">
-            chevron_left
-          </span>
-          <span class="material-symbols-outlined icon-wrap">
-            chevron_right
-          </span>
-          <div class="merged-icons">
-            <span class="material-symbols-outlined square-wrap fill">
-              keyboard
-            </span>
-            <span class="material-symbols-outlined square-wrap">
-              arrow_drop_down
-            </span>
+
+        <div tabindex="1" class="message-genre">
+          <span class="material-symbols-outlined"> inbox </span>
+          <p>Inbox</p>
+        </div>
+        <div tabindex="1" class="message-genre text-thin">
+          <span class="material-symbols-outlined"> star </span>
+          <p>Starred</p>
+        </div>
+        <div tabindex="1" class="message-genre text-thin">
+          <span class="material-symbols-outlined"> schedule </span>
+          <p>Snoozed</p>
+        </div>
+        <div tabindex="1" class="message-genre text-thin">
+          <span class="material-symbols-outlined"> send </span>
+          <p>Sent</p>
+        </div>
+        <div tabindex="1" class="message-genre">
+          <span class="material-symbols-outlined"> draft </span>
+          <p>Drafts</p>
+        </div>
+        <div tabindex="1" class="message-genre text-thin">
+          <span class="material-symbols-outlined"> expand_more </span>
+          <p>More</p>
+        </div>
+        <div class="label">
+          <p>Labels</p>
+          <div class="icon-wrap">
+            <span class="material-symbols-outlined"> add </span>
           </div>
+        </div>
+        <div tabindex="1" class="message-genre text-thin">
+          <span class="material-symbols-outlined fill"> label </span>
+          <p>Notes</p>
+        </div>
+        <div tabindex="1" class="message-genre text-thin">
+          <span class="material-symbols-outlined fill"> label </span>
+          <p>Unwanted</p>
         </div>
       </div>
-      <!-- icons row ends here -->
+      <!-- left column ends here -->
 
+      <!-- container for the middle column -->
+      <div class="middle-column">
+        <!-- container for the icons row -->
+        <div class="icons-container">
+          <div class="flexed-icons start">
+            <div class="merged-icons">
+              <input
+                class="square-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined square-wrap">
+                arrow_drop_down
+              </span>
+            </div>
+            <span class="material-symbols-outlined icon-wrap"> refresh </span>
+            <span class="material-symbols-outlined icon-wrap"> more_vert </span>
+          </div>
+          <div class="flexed-icons end message-genre">
+            <p class="square-wrap">1-50 of 804</p>
+            <span class="material-symbols-outlined icon-wrap">
+              chevron_left
+            </span>
+            <span class="material-symbols-outlined icon-wrap">
+              chevron_right
+            </span>
+            <div class="merged-icons">
+              <span class="material-symbols-outlined square-wrap fill">
+                keyboard
+              </span>
+              <span class="material-symbols-outlined square-wrap">
+                arrow_drop_down
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- icons row ends here -->
 
-      <!--container for the emaillist starts here -->
-      <div class="email_list">
-
-        <!-- container for the message headers -->
-        <div class="message-headings">
-          <div tabindex="1" class="message-heading text-thin">
-            <span class="material-icons-outlined">
-              inbox
-            </span>
-            <p>Primary</p>
-          </div>
-          <div tabindex="1" class="message-heading text-thin">
-            <span class="material-icons-outlined">
-              sell
-            </span>
-            <p>Promotions</p>
-          </div>
-          <div tabindex="1" class="message-heading text-thin">
-            <span class="material-icons-outlined">
-              group
-            </span>
-            <p>Social</p>
-          </div>
-          <div tabindex="1" class="message-heading text-thin">
-            <span class="material-icons-outlined">
-              info
-            </span>
-            <p>Updates</p>
-          </div>
-          <div tabindex="1" class="message-heading text-thin">
-            <span class="material-icons-outlined">forum</span>
-            <!-- <span class="material-symbols-outlined">
+        <!--container for the emaillist starts here -->
+        <div class="email_list">
+          <!-- container for the message headers -->
+          <div class="message-headings">
+            <div tabindex="1" class="message-heading text-thin">
+              <span class="material-icons-outlined"> inbox </span>
+              <p>Primary</p>
+            </div>
+            <div tabindex="1" class="message-heading text-thin">
+              <span class="material-icons-outlined"> sell </span>
+              <p>Promotions</p>
+            </div>
+            <div tabindex="1" class="message-heading text-thin">
+              <span class="material-icons-outlined"> group </span>
+              <p>Social</p>
+            </div>
+            <div tabindex="1" class="message-heading text-thin">
+              <span class="material-icons-outlined"> info </span>
+              <p>Updates</p>
+            </div>
+            <div tabindex="1" class="message-heading text-thin">
+              <span class="material-icons-outlined">forum</span>
+              <!-- <span class="material-symbols-outlined">
               forum
             </span> -->
-            <p>Forums</p>
+              <p>Forums</p>
+            </div>
+          </div>
+          <!-- container the message header ends here -->
+
+          <!-- container for the messages -->
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>ZenithBank</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Get a Zenith Bank Virtual card</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>
+                  Unable to view this email? Click here Click here to U........
+                </p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Github</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>[Github] Please verify your device</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>
+                  Hey Creatorjihm! A sign in attempt requires futher
+                  ve...........
+                </p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Quora Digest</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>How do I improve coding in 3 months</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>Hello, I think I'm the perfect candidate to an........</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>David Herbert via L.</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>David just messages you</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>2 new messages await your response</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>LinkedIn Job Alerts</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>"web designer": 3 opportunities</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>Frontend Developer and other roles are available</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Premier League</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Man City's Premier League fixtures</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>The season starts here The 2023/2024 Preseason</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Kuda</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Transaction Notification</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>
+                  Transaction Notification Hi Jimoh Muhammed Segiru, You
+                  ju........
+                </p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Indeed</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>
+                  Updraft WP Spoftware Ltd is hiring for PHP Software Developer
+                  (Wordpress) (062.....
+                </p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>
+                  Unable to view this email? Click here Click here to
+                  Unsubscribe
+                </p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Global Scholarships</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Application Tips for the University of Cambridge</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>Start your University of Cambridge...............</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Hasan</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>FREE Ultimate Advanced ChatGPT Mastery Course</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>Hey, it's Hasan Toor. I just r.........</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>The freeCodeCamp Fo.</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>[The freeCodeCamp Forum] Summary</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>A brief summary since your last visit .............</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>LinkedIn</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>9 people noticed you</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>See who's looking at your profile</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Ndiukwu (via Linked.</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Segiru; I'm still waiting for your response</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>Add Ndiukwu Ezinne Chioma to expa.............</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Twitter</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Florin Pop Tweeted: 5 sales @ $59/day => $107,675/yr</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p></p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Udemy</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>
+                  Learn the skills to get where you want to go. Courses on sale
+                  from N4,500.00.
+                </p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>We .............</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Discord</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>
+                  You have a new message from Chris at Kevin Powell Community
+                </p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>Tap to view</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>CodePen</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>Spicy Sliders, Brilliant Buttons, and Blend Mode Sunsets</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>View this issue on Cod.............</p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Twitter</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>
+                  @creatorjihm, check out the notifications you have from
+                  @DaveyHert
+                </p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p></p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
+          </div>
+
+          <div class="message-wrap">
+            <div class="message-left message-genre flexed-icons">
+              <input
+                class="icon-wrap"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
+              <span class="material-symbols-outlined icon-wrap star">
+                star
+              </span>
+              <span class="material-symbols-outlined icon-wrap">
+                label_important
+              </span>
+              <p>Reddit</p>
+            </div>
+
+            <div class="message-middle">
+              <span class="bold">
+                <p>"Karma Please"</p>
+              </span>
+              <span>
+                <p>-</p>
+              </span>
+              <span class="text">
+                <p>
+                  r/Karma4Free: Karma please r/Karma4Free . Posted by
+                  u/amila22.............
+                </p>
+              </span>
+            </div>
+            <div class="message-right">
+              <p>Jun 10</p>
+            </div>
           </div>
         </div>
-        <!-- container the message header ends here -->
-
-        <!-- container for the messages -->
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>ZenithBank</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Get a Zenith Bank Virtual card</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Unable to view this email? Click here Click here to U........</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Github</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>[Github] Please verify your device</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Hey Creatorjihm! A sign in attempt requires futher ve...........</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Quora Digest</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>How do I improve coding in 3 months</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Hello, I think I'm the perfect candidate to an........</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>David Herbert via L.</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>David just messages you</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>2 new messages await your response</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>LinkedIn Job Alerts</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>"web designer": 3 opportunities</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Frontend Developer and other roles are available</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Premier League</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Man City's Premier League fixtures</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>The season starts here The 2023/2024 Preseason</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Kuda</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Transaction Notification</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Transaction Notification Hi Jimoh Muhammed Segiru, You ju........ </p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Indeed</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Updraft WP Spoftware Ltd is hiring for PHP Software Developer (Wordpress) (062.....</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Unable to view this email? Click here Click here to Unsubscribe</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Global Scholarships</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Application Tips for the University of Cambridge</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Start your University of Cambridge...............</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Hasan</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>FREE Ultimate Advanced ChatGPT Mastery Course</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Hey, it's Hasan Toor. I just r.........</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>The freeCodeCamp Fo.</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>[The freeCodeCamp Forum] Summary</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>A brief summary since your last visit .............</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>LinkedIn</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>9 people noticed you</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>See who's looking at your profile</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Ndiukwu (via Linked.</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Segiru; I'm still waiting for your response</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Add Ndiukwu Ezinne Chioma to expa.............</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Twitter</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Florin Pop Tweeted: 5 sales @ $59/day => $107,675/yr</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p></p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Udemy</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Learn the skills to get where you want to go. Courses on sale from N4,500.00.</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>We .............</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Discord</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>You have a new message from Chris at Kevin Powell Community</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>Tap to view</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>CodePen</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>Spicy Sliders, Brilliant Buttons, and Blend Mode Sunsets</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>View this issue on Cod.............</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Twitter</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>@creatorjihm, check out the notifications you have from @DaveyHert</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p></p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
-
-        <div class="message-wrap">
-          <div class="message-left message-genre flexed-icons">
-            <input class="icon-wrap" type="checkbox" id="checkbox" name="checkbox">
-            <span class="material-symbols-outlined icon-wrap star">
-              star
-            </span>
-            <span class="material-symbols-outlined icon-wrap">
-              label_important
-            </span>
-            <p>Reddit</p>
-          </div>
-
-          <div class="message-middle">
-            <span class="bold">
-              <p>"Karma Please"</p>
-            </span>
-            <span>
-              <p>-</p>
-            </span>
-            <span class="text">
-              <p>r/Karma4Free: Karma please r/Karma4Free . Posted by u/amila22.............</p>
-            </span>
-          </div>
-          <div class="message-right">
-            <p>Jun 10</p>
-          </div>
-        </div>
+        <!-- messages ends here -->
       </div>
-      <!-- messages ends here -->
-    </div>
-    <!-- middle column ends here -->
+      <!-- middle column ends here -->
 
-    <!-- right column starts here -->
-    <div class="right-column">
-      <div class="icon-wrap">
-        <img src="/img/icons8-google-calendar-48.png" alt="">
-      </div>
-      <div class="icon-wrap">
-        <img src="/img/keeplogo.png" alt="">
-      </div>
-      <div class="icon-wrap">
-        <img src="/img/googletask.png" alt="">
-      </div>
-      <div class="icon-wrap">
-        <img src="/img/google_contacts_icon-removebg-preview.png" alt="">
-      </div>
-
-      <div class="add">
+      <!-- right column starts here -->
+      <div class="right-column">
         <div class="icon-wrap">
-          <span class="material-symbols-outlined">
-            add
-          </span>
+          <img src="/img/icons8-google-calendar-48.png" alt="" />
+        </div>
+        <div class="icon-wrap">
+          <img src="/img/keeplogo.png" alt="" />
+        </div>
+        <div class="icon-wrap">
+          <img src="/img/googletask.png" alt="" />
+        </div>
+        <div class="icon-wrap">
+          <img src="/img/google_contacts_icon-removebg-preview.png" alt="" />
+        </div>
+
+        <div class="add">
+          <div class="icon-wrap">
+            <span class="material-symbols-outlined"> add </span>
+          </div>
+        </div>
+
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined"> chevron_right </span>
         </div>
       </div>
-
-      <div class="icon-wrap">
-        <span class="material-symbols-outlined">
-          chevron_right
-        </span>
-      </div>
+      <!-- right column ends here -->
     </div>
-    <!-- right column ends here -->
-  </div>
-
-</body>
-
+  </body>
 </html>
